@@ -29,6 +29,9 @@ body {
   font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
 }
+.container {
+  max-width: 970px;
+}
 .header {
   background-color: #5b6169;
 }
@@ -93,6 +96,7 @@ body {
 }
 
 .section-title {
+  display: inline-block;
   font-size: 48px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -150,9 +154,7 @@ body {
 }
 
 .about__title {
-  font-size: 36px;
   color: #7c7c7c;
-  margin-bottom: 20px;
 }
 
 .about__descr {
@@ -160,7 +162,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #4e4e4e;
-  margin-bottom: 78px;
+  margin-bottom: 30px;
 }
 
 .skills__title {
@@ -218,7 +220,9 @@ body {
   font-weight: 400;
   border-radius: 0;
 }
-
+.about__map{
+  margin-bottom: 42px;
+}
 .textarea-msg {
   position: relative;
 }
@@ -250,7 +254,7 @@ body {
 
 .carousel-indicators {
   left: auto;
-  right: -194px;
+  right: -144px;
 }
 
 .carousel-indicators button {
@@ -264,7 +268,11 @@ body {
 .carousel-control-next {
   display: none;
 }
-
+@media screen and (max-width: 910px) {
+  .carousel-indicators{
+    right: -110px;
+  }
+}
 @media screen and (max-width: 834px) {
   .section-title::before,
   .section-title::after {
@@ -298,23 +306,23 @@ body {
   .services__title {
     margin-bottom: 20px;
   }
-  .services__item{
+  .services__item {
     margin-bottom: 30px;
   }
-  .services__item-image{
+  .services__item-image {
     margin-bottom: 10px;
   }
-  .services__item-title{
+  .services__item-title {
     margin-bottom: 15px;
   }
 
-  .about{
+  .about {
     padding: 20px 0 40px;
   }
-  .about__descr{
+  .about__descr {
     margin-bottom: 15px;
   }
-  .skills__title{
+  .skills__title {
     margin-bottom: 15px;
   }
 }
